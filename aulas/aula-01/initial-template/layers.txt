@@ -1,0 +1,21 @@
+index.js -> 
+    -> Responsável por todas as camadas
+
+services ->
+    -> Toda a lógica de negócio
+    -> Todas as chamadas externas (API, arquivos, banco de dados)
+
+views ->
+    -> Toda interação com o DOM (com o HTML)
+
+controllers ->
+    -> Faz a intermediação entre (services e/ou workers) e views
+
+factories ->
+    -> É quem importa as dependências
+    -> É quem cria o objeto final para fazermos as chamadas
+
+workers ->
+    -> Toda a lógica pesada vem para ser rodada em uma multithread
+    -> Chama as regras de negócio da service
+    -> Processos em segundo plano
